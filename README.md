@@ -54,7 +54,7 @@ The result: **Business Insight 360** — five views, every stakeholder covered, 
 
 ### 💰 Finance View
 
-![Finance](screenshots/finance.png)
+![Finance](screenshots/finance.jpg)
 
 The full P&L statement from Gross Sales to Net Profit % — benchmarkable against Last Year or Target with a single toggle. The step-line trend chart shows **exactly when revenue changed**, not a misleading smooth curve. Field Parameters enable drill-through from Region → Market → Product in one visual.
 
@@ -64,7 +64,7 @@ The full P&L statement from Gross Sales to Net Profit % — benchmarkable agains
 
 ### 🤝 Sales View
 
-![Sales](screenshots/sales.png)
+![Sales](screenshots/sales.jpg)
 
 A performance scatter matrix plots every customer by Net Sales vs Gross Margin % — ideal customers sit top-right. The Customer ↔ Product toggle is built with **Field Parameters** — one table, two dimensions, zero duplication. GM% inline data bars let the Sales team scan profitability at a glance without reading every number.
 
@@ -74,7 +74,7 @@ A performance scatter matrix plots every customer by Net Sales vs Gross Margin %
 
 ### 📣 Marketing View
 
-![Marketing](screenshots/marketing.png)
+![Marketing](screenshots/Marketing.jpg)
 
 Two toggle techniques on one page: a **Bookmark button** swaps the scatter chart Y-axis between NP% and GM%, and a **Selection Pane + Grouping** toggle switches the table between Segment and Market. Conditional formatting on ΔNP% fires red bars on any segment declining vs benchmark — instant visual alert, no reading required.
 
@@ -84,7 +84,7 @@ Two toggle techniques on one page: a **Bookmark button** swaps the scatter chart
 
 ### 🚛 Supply Chain View
 
-![Supply Chain](screenshots/supply_chain.png)
+![Supply Chain](screenshots/supply_chain.jpg)
 
 Forecast Accuracy %, Net Error and Absolute Error KPIs — each with Last Year comparison and directional arrow. Net Error bars are colour-coded: **gold for over-forecast, red for under-forecast**. Every customer and product segment is flagged EI (Excess Inventory) or OOS (Out of Stock risk) — directly driving replenishment decisions.
 
@@ -94,7 +94,7 @@ Forecast Accuracy %, Net Error and Absolute Error KPIs — each with Last Year c
 
 ### 🏆 Executive View
 
-![Executive](screenshots/executive.png)
+![Executive](screenshots/executive.jpg)
 
 Four KPI cards with embedded sparklines — value, benchmark delta and trend direction in one card. The PC market share trend shows AtliQ's 5-year growth story against four named competitors. A Revenue toggle switches between Division and Channel splits. The Sub-Region scorecard gives the CEO a global view across 7 regions in one table.
 
@@ -120,13 +120,13 @@ Power BI Service (Published & Live)
 
 ### Data Model — Star Schema
 
-![Data Model](docs/data_model.png)
+![Data Model](screenshots/data_model.jpg)
 
 Two fact tables (`fact_actuals_estimates`, `fact_forecast_monthly`) connected to dimension tables (`dim_customer`, `dim_product`, `dim_market`, `dim_date`) via primary and foreign keys. Support tables (`P&L Rows/Columns`, `NsGm Target`, `Set BM`) power the dynamic P&L layout and benchmark toggle logic.
 
 ### DAX — Key Measure Categories
 
-Full documented code in [`dax/measures.md`](dax/measures.md)
+Full documented code in [`dax/measures.md`](dax/Measures.md)
 
 | Category | Measures |
 |----------|---------|
